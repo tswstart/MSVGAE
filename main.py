@@ -430,10 +430,10 @@ if __name__ == '__main__':
     parser.add_argument('--preprocess', action='store_true', help='Preprocess recipe for raw counts.')
     parser.add_argument('--graph_path', help='Graph specified as an edge list (one edge per line, nodes separated by whitespace, not comma), if not using command line options to generate it.')
     parser.add_argument('--num_heads', help='Number of attention heads for each layer. Input is a list that must match the total number of layers = num_hidden_layers + 2 in length.',
-                        type=int, nargs='*', default=[10, 10, 10, 10])
+                        type=int, nargs='*', default=[5, 5, 5, 5])
     parser.add_argument('--hidden_dims', type=int, nargs='*', default=[128, 128])
     parser.add_argument('--dropout', type=float, nargs='*', default=(0.4, 0.4))
-    parser.add_argument('--latent_dim', help='Latent dimension (output dimension for node embeddings).', default=100,
+    parser.add_argument('--latent_dim', help='Latent dimension (output dimension for node embeddings).', default=50,
                         type=int)
     parser.add_argument('--hdbscan', action='store_true', default=False)
     parser.add_argument('--kmeans', action='store_true', default=False)
