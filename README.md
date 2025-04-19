@@ -55,7 +55,7 @@ In this context, we offer a collection of commonly employed scGCC parameters for
 
 Our sample dataset is stored in the directory "data/".
 
-### 2. Apply scGCC
+### 2. Apply MSVGAE
 
 ```python
 python main.py --X_path "./data/imbalanced/data_-1c4_counts.csv" --Y_path "./data/imbalanced/data_-1c4_labels.csv" --preprocess --save_graph --hdbscan --GAT
